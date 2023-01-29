@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>AJA - Redirection</title>
+    <script language="JavaScript">
+      var seconds = 10; // seconds for HTML
+      var foo; // variable for clearInterval() function
+
+      function redirect() {
+          document.location.href = 'https://www.aja.fr/';
+      }
+
+      function updateSecs() {
+          document.getElementById("seconds").innerHTML = seconds;
+          seconds--;
+          if (seconds == -1) {
+              clearInterval(foo);
+              redirect();
+          }
+      }
+
+      function countdownTimer() {
+          foo = setInterval(function () {
+              updateSecs()
+          }, 1000);
+      }
+
+      countdownTimer();
+    </script>
+  </head>
+  <body onload="startClock()">
+<p>You should be automatically redirected in <span id="seconds">10</span> seconds.
+</p>
+  </body>
+</html>
