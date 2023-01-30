@@ -1,4 +1,12 @@
+@font-face {
+    font-family: 'louis_george_caferegular';
+    src: url('louis_george_cafe-webfont.woff2') format('woff2'),
+         url('louis_george_cafe-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 body{
+	font-family: 'louis_george_caferegular';
 	background: rgb(5,27,75);
 	background: linear-gradient(90deg, rgba(5,27,75,1) 0%, rgba(7,59,139,1) 35%, rgba(53,118,183,1) 100%); 
 	display: table;
