@@ -29,3 +29,19 @@ div{
 	display: flex;
 	flex-direction: column;
 }
+footer{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+}
+footer > span {
+	font-size: 10pt;
+}
+footer > span > a{
+	font-size: 10pt;
+	color: white;
+	text-decoration: none;
+}
+
