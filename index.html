@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>AJA - Redirection</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
     <script language="JavaScript">
-      var seconds = 9; // seconds for HTML
+      var seconds = 4; // seconds for HTML
       var foo; // variable for clearInterval() function
 
       function redirect() {
@@ -20,13 +21,11 @@
               redirect();
           }
       }
-
       function countdownTimer() {
           foo = setInterval(function () {
               updateSecs()
           }, 1000);
       }
-
       countdownTimer();
     </script>
   </head>
@@ -36,15 +35,16 @@
         <span><img src="loader.gif"></span> 
       </div> 
       <div>
-        <span>Vous allez être redirigé dans <span id="seconds">10</span> secondes...</span>
+        <span id="message">Vous allez être redirigé dans <span id="seconds">5</span> secondes...</span>
       </div>
-      
     </div>
+
+    <script>
+
+    </script>
+
     <footer>
-      <span>©2023 <a href="https://geuens.fr" target="_blank"> Aurélien Geuens </a></span>
+      <span>©2023 <a href="https://geuens.fr" target="_blank">Aurélien Geuens </a></span>
     </footer>
-
-
-
   </body>
 </html>
