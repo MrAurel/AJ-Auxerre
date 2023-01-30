@@ -1,4 +1,18 @@
 body{
 	background: rgb(5,27,75);
 	background: linear-gradient(90deg, rgba(5,27,75,1) 0%, rgba(7,59,139,1) 35%, rgba(53,118,183,1) 100%); 
+	display: table;
+ 	width: 100%;
+	font-weight: 800;
+	font-size: 1.5em;
+}
+html, body {
+  margin: 0;
+  height: 100%;
+}
+
+body > span {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
 }
