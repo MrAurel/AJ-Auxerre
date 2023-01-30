@@ -4,7 +4,7 @@
   <link rel="stylesheet" type="text/css" href="style.css">
     <title>AJA - Redirection</title>
     <script language="JavaScript">
-      var seconds = 10; // seconds for HTML
+      var seconds = 9; // seconds for HTML
       var foo; // variable for clearInterval() function
 
       function redirect() {
@@ -30,7 +30,17 @@
     </script>
   </head>
   <body onload="startClock()">
-<span>You should be automatically redirected in <span id="seconds">10</span> seconds.
-</span>
+    <div>
+      <div>
+        <span><img src="loader.gif"></span> 
+      </div> 
+      <div>
+        <span>Vous allez être redirigé dans <span id="seconds">10</span> secondes...</span>
+      </div>
+      
+    </div>
+
+
+
   </body>
 </html>
