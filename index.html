@@ -6,7 +6,7 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>AJA - Redirection</title>
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-    <script language="JavaScript">
+    <script>
       var seconds = 4; // seconds for HTML
       var foo;
 
@@ -17,6 +17,11 @@
       function updateSecs() {
           document.getElementById("seconds").innerHTML = seconds;
           seconds--;
+          if (seconds <= 0) {
+            var str = ' secondes...';
+            var str = str.replace(/es/g, "e");
+            document.getElementById("seconds_text").innerHTML = str;
+          }
           if (seconds == -1) {
               clearInterval(foo);
               redirect();
@@ -36,7 +41,7 @@
         <span><img src="images/loader.gif"></span> 
       </div> 
       <div>
-        <span id="message">Vous allez être redirigé dans <span id="seconds">5</span> secondes...</span>
+        <span id="message">Vous allez être redirigé dans <span id="seconds">5</span><span id="seconds_text"> secondes...</span></span>
       </div>
     </div>
     <footer>
