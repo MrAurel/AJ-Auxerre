@@ -5,6 +5,13 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: 'louis_george_cafe_lightRg';
+    src: url('fonts/louis_george_cafe_light-webfont.woff2') format('woff2'),
+         url('fonts/louis_george_cafe_light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 body{
 	font-family: 'louis_george_caferegular';
 	background: rgb(5,27,75);
@@ -33,8 +40,10 @@ footer{
 	position: absolute;
 	left: 0;
 	bottom: 0;
+	padding-bottom: 10px;
 	width: 100%;
 	text-align: center;
+	font-family: 'louis_george_cafe_lightRg';
 }
 footer > span {
 	font-size: 10pt;
